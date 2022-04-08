@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=0,width=device-width, initial-scale=1.0">
   <title>boxShadow</title>
   <style>
-      .container{
+    @media (max-width: 768px) {
+      html {
+        height: 100vh;
+      }
+
+      .container {
+        width: 300px;
+        margin: 40vh auto auto auto;
+        /*border: 1px solid red;*/
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+      }
+
+
+      a {
+        text-decoration: none;
+        border: 1px solid #4a4a4a;
+        padding: 5px 15px;
+        box-shadow: 4px 4px darkorange;
+        transition: .5s ease;
+        margin-bottom: 15px;
+
+
+      }
+
+      a:hover {
+        box-shadow: none;
+      }
+    }
+
+
+    @media (min-width: 769px) {
+      html {
+        height: 100vh;
+      }
+
+      .container {
         width: 800px;
         margin: 40vh auto auto auto;
         /*border: 1px solid red;*/
@@ -13,7 +52,7 @@
         justify-content: space-between;
       }
 
-      a{
+      a {
         text-decoration: none;
         border: 1px solid #4a4a4a;
         padding: 10px 30px;
@@ -21,9 +60,12 @@
         transition: .5s ease;
       }
 
-      a:hover{
+      a:hover {
         box-shadow: none;
       }
+    }
+
+
   </style>
 </head>
 <body>
